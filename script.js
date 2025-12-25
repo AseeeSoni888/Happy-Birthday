@@ -1,5 +1,9 @@
 function blowCandles() {
   const candles = document.querySelectorAll(".candle");
+  const music = document.getElementById("bgMusic");
+
+  // Play music on user interaction (allowed)
+  music.play().catch(() => {});
 
   candles.forEach((candle, index) => {
     setTimeout(() => {
