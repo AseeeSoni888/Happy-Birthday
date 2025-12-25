@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Birthday 🎂</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <div class="cake" onclick="blowCandles()">
     <div class="plate"></div>
     <div class="layer"></div>
-    <div class="candles" id="candles"></div>
+
+    <!-- Candles -->
+    <div class="candles" id="candles">
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+    </div>
   </div>
 
-  <p style="font-size: 14px; color: #666;">
+  <p style="font-size: 14px; color: #666; margin-top: 16px;">
     💨 Tap the cake to blow the candles
   </p>
 
   <!-- JS -->
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
