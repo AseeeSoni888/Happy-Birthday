@@ -1,17 +1,52 @@
 body {
+  margin: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin: 0;
+  align-items: center;
   font-family: Arial, sans-serif;
   background: #fff5e6;
 }
 
+.cake {
+  position: relative;
+  width: 200px;
+  height: 180px;
+  cursor: pointer;
+}
+
+/* Plate */
+.plate {
+  position: absolute;
+  bottom: 0;
+  width: 220px;
+  height: 20px;
+  background: #ddd;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Cake body */
+.layer {
+  position: absolute;
+  bottom: 20px;
+  width: 200px;
+  height: 100px;
+  background: #ffb3c6;
+  border-radius: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Candles */
 .candles {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  margin-top: 20px;
 }
 
 .candle {
@@ -23,6 +58,7 @@ body {
   border-radius: 3px;
 }
 
+/* Flame */
 .flame {
   width: 8px;
   height: 8px;
@@ -40,6 +76,7 @@ body {
   100% { transform: scale(1); }
 }
 
+/* Blown effect */
 .candle.blown {
   background: #ccc;
 }
@@ -48,4 +85,18 @@ body {
   animation: none;
   opacity: 0;
   transform: scale(0);
+}
+
+/* Text */
+.hint {
+  font-size: 14px;
+  color: #666;
+  margin-top: 16px;
+}
+
+#wish {
+  opacity: 0;
+  margin-top: 20px;
+  transition: opacity 1s ease;
+  text-align: center;
 }
