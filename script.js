@@ -1,12 +1,13 @@
-
-
-
 function blowCandles() {
-  const flames = document.querySelectorAll(".candle");
+  const candles = document.querySelectorAll(".candle");
 
-  flames.forEach((candle, index) => {
+  candles.forEach((candle, index) => {
     setTimeout(() => {
       candle.classList.add("blown");
-    }, index * 60); // staggered blow effect
+    }, index * 60);
   });
+
+  setTimeout(() => {
+    document.getElementById("wish").style.opacity = "1";
+  }, candles.length * 60 + 500);
 }
