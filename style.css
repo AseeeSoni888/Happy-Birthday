@@ -1,9 +1,11 @@
-.candle.blown {
-  background: #ccc;
-}
-
-.candle.blown .flame {
-  animation: none;
-  opacity: 0;
-  transform: scale(0);
-}
+<div class="candles" id="candles">
+  <div class="candle">
+    <div class="flame"></div>
+  </div>
+  <div class="candle">
+    <div class="flame"></div>
+  </div>
+  <div class="candle">
+    <div class="flame"></div>
+  </div>
+</div>
