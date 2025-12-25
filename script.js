@@ -1,5 +1,5 @@
 
-alert("JS LOADED");
+
 
 function blowCandles() {
   const flames = document.querySelectorAll(".candle");
