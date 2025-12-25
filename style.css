@@ -1,11 +1,51 @@
-<div class="candles" id="candles">
-  <div class="candle">
-    <div class="flame"></div>
-  </div>
-  <div class="candle">
-    <div class="flame"></div>
-  </div>
-  <div class="candle">
-    <div class="flame"></div>
-  </div>
-</div>
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff5e6;
+}
+
+.candles {
+  display: flex;
+  margin-top: 20px;
+}
+
+.candle {
+  width: 10px;
+  height: 30px;
+  background: white;
+  margin: 0 6px;
+  position: relative;
+  border-radius: 3px;
+}
+
+.flame {
+  width: 8px;
+  height: 8px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 1px;
+  animation: flicker 0.3s infinite;
+}
+
+@keyframes flicker {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.candle.blown {
+  background: #ccc;
+}
+
+.candle.blown .flame {
+  animation: none;
+  opacity: 0;
+  transform: scale(0);
+}
