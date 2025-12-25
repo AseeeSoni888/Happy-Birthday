@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Birthday 🎂</title>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Cake -->
   <div class="cake" onclick="blowCandles()">
     <div class="plate"></div>
     <div class="layer"></div>
 
+    <!-- Candles -->
     <div class="candles" id="candles">
       <div class="candle"><div class="flame"></div></div>
       <div class="candle"><div class="flame"></div></div>
@@ -22,11 +25,17 @@
 
   <p class="hint">💨 Tap the cake to blow the candles</p>
 
+  <!-- Birthday Message -->
   <h2 id="wish">
-    🎉 Happiest 23rd Birthday! Rishuu... 🎉<br />
+    🎉 Happy Birthday! 🎉<br />
     May your day be as sweet as this cake 💖
   </h2>
 
+  <!-- Background Music -->
+  <audio id="bgMusic" src="music.mp3" preload="auto"></audio>
+
+  <!-- JS -->
   <script src="script.js"></script>
+
 </body>
 </html>
